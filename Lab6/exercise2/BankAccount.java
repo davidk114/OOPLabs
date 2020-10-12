@@ -1,9 +1,10 @@
-package Lab5.exercise4;
+package Lab6.exercise2;
 
 public class BankAccount {
     private String owner;
     private int number;
     private static double interestRate;
+    private static int count;
 
     public String getOwner(){
         return owner;
@@ -27,8 +28,13 @@ public class BankAccount {
 
     public BankAccount(String owner, int number, double interestRate){
         setOwner(owner);
-        setNumber(number);
+        incrementCount();
+        setNumber(count);
         setInterestRate(interestRate);
+    }
+
+    private static void incrementCount(){
+        count++;
     }
 
     public BankAccount(){
