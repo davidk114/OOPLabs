@@ -79,6 +79,14 @@ public class Animal {
 				 str+="No continents specified";
 				 return str;
 				}
+		 else if(weight == 0){
+		 	str+="No weight specified";
+		 	return str;
+		 }
+		 else if(age ==0){
+		 	str+="No age specified";
+		 	return str;
+		 }
 				
 		/*if we get to here then there must have been an array object created
 		so traverse it using a loop and "join" its contents to the existing
