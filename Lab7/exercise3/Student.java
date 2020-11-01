@@ -37,7 +37,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Name: " + getName() + "  ID: " + getId() + "  Department: " + getDepartment();
+        return "Name: " + getName() + "  ID: " + getId() + "  Department: " + getDepartment() + "\n";
     }
 }
 

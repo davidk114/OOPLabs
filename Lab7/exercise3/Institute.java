@@ -29,7 +29,14 @@ public class Institute {
     }
 
     public String toString(){
-        return("Name: " + getName());
+        String str = "Name: " + getName() + "\n\nDepartments: ";
+
+        for(int i=0;i<getDepartments().length;i++)
+            if(departments[i]!=null)
+                str+=departments[i];
+
+        return str;
+
     }
 
     // getTotalStudent()

@@ -29,8 +29,13 @@ public class Department {
     }
 
     public String toString(){
-        return("Departments:\nName: " + getName() + "\nList of students:\n\n" +
-                getStudents());
+        String str ="Departments:\nName: " + getName() + "\nList of students:\n\n";
+
+        for(int i=0;i<getStudents().length;i++)
+            if(students[i]!=null)
+                str+=students[i];
+
+        return str;
     }
 
 
